@@ -21,7 +21,7 @@
  let guesses = 0
 
  const newGame = () => {
-    const random = Math.floor(Math.random() * 10) + 1
+    const random = Math.floor(Math.random() * words.length)
     randomizeWord = words[random]
     maskedWord = "*".repeat(randomizeWord.length)
     guesses = 0
